@@ -1,5 +1,12 @@
 .contactme {
   padding-bottom: 8rem;
+
+  @include respond(tab-port) {
+    padding-bottom: 6rem;
+  }
+  @include respond(phone) {
+    padding-bottom: 3rem;
+  }
 }
 .my-img {
   border-radius: 2000px;
