@@ -81,6 +81,10 @@ a {
     transform: scale(1); } }
 
 /***************/
+.centering {
+  display: flex;
+  justify-content: center; }
+
 .header {
   padding: 1rem 3rem;
   background-color: var(--white);
