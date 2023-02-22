@@ -42,3 +42,5 @@ document.addEventListener("DOMContentLoaded", function () {
   });
   splide.mount();
 });
+
+AOS.init();
