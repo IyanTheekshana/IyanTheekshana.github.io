@@ -7,10 +7,15 @@
     height: 65vh;
   }
   @include respond(phone) {
-    height: 60vh;
+    height: 70vh;
   }
   @media screen and (min-width: 1600px) {
     height: 75vh;
+  }
+
+  @media (min-aspect-ratio: 8/5) and (max-width: 840px) {
+    clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 100%, 0 0);
+    height: 100vh;
   }
 }
 
@@ -21,6 +26,7 @@
   }
   @include respond(phone) {
     font-size: 3rem;
+    padding-top: 3rem;
   }
   @media screen and (min-width: 1600px) {
     padding-top: 6rem;

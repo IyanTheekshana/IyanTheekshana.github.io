@@ -131,10 +131,14 @@ a {
       height: 65vh; } }
   @media only screen and (max-width: 37.5em) {
     .hero {
-      height: 60vh; } }
+      height: 70vh; } }
   @media screen and (min-width: 1600px) {
     .hero {
       height: 75vh; } }
+  @media (min-aspect-ratio: 8 / 5) and (max-width: 840px) {
+    .hero {
+      clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 100%, 0 0);
+      height: 100vh; } }
 
 .main-title {
   font-size: 6.5rem; }
@@ -143,7 +147,8 @@ a {
       font-size: 3.5rem; } }
   @media only screen and (max-width: 37.5em) {
     .main-title {
-      font-size: 3rem; } }
+      font-size: 3rem;
+      padding-top: 3rem; } }
   @media screen and (min-width: 1600px) {
     .main-title {
       padding-top: 6rem; } }
