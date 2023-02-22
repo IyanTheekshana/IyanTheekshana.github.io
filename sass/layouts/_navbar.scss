@@ -1,0 +1,41 @@
+.header {
+  padding: 1rem 3rem;
+  background-color: var(--white);
+  display: flex;
+  justify-content: center;
+  top: 1rem;
+  left: 1rem;
+  @include respond(tab-port) {
+    padding: 1rem 2rem;
+  }
+  @include respond(phone) {
+    padding: 1rem 1rem;
+  }
+}
+
+.navbar {
+  border-radius: 0.95rem;
+  position: fixed;
+  width: 92%;
+  z-index: 999;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px !important;
+}
+
+.navbar-brand {
+  font-size: 2rem;
+  padding-left: 2rem;
+  font-family: var(--title-text);
+  font-weight: 700;
+}
+
+.navbar-nav {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.nav-link {
+  font-size: 1.2rem;
+  margin-right: 30px;
+  font-family: var(--title-text);
+}

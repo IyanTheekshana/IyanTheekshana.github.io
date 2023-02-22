@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800&family=Syne:wght@400;600;700;800&display=swap");
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+:root {
+  --text: "Inter", sans-serif;
+  --title-text: "Syne", sans-serif;
+
+  --white: #f8f8f8;
+  --white-2: #e1e1e1;
+  --black: #161616;
+  --black-hover: #2d2d2d;
+  --hover: #656565;
+}
+
+body {
+  font-family: var(--text);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--title-text);
+  font-weight: 600;
+}
+
+a {
+  text-decoration: none;
+}
+
+.main {
+  width: 100%;
+  font-size: 1.4rem;
+}
+
+.sub__title-box {
+  display: grid;
+  grid-template-columns: 1fr max-content;
+  grid-column-gap: 1.5rem;
+  align-items: center;
+
+  &::before {
+    content: "";
+    height: 1px;
+    display: block;
+    background-color: currentColor;
+  }
+  @include respond(tab-port) {
+    &-title {
+      font-size: 2.2rem;
+    }
+  }
+}
+
+/****************/
+.blink {
+  animation: crescendo 2s alternate infinite ease-in;
+}
+
+@keyframes crescendo {
+  0% {
+    font-size: 0.2%;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/***************/

@@ -1,0 +1,94 @@
+.chi-sono {
+  padding-top: 5rem;
+  padding-bottom: 10rem;
+  position: relative;
+  & p {
+    &:first-child {
+      //   padding-top: 7rem;
+    }
+    font-size: 1.4rem;
+    @include respond(phone) {
+      font-size: 1rem;
+    }
+  }
+}
+
+.sub__title-box {
+  display: grid;
+  grid-template-columns: 1fr max-content;
+  grid-column-gap: 1.5rem;
+  align-items: center;
+
+  //   &-title::before {
+  //     content: "";
+  //     width: 90%;
+  //     height: 2px;
+  //     background-color: red;
+  //     position: absolute;
+  //     top: 35%;
+  //     right: 0;
+  //     z-index: 0;
+  //   }
+  &::before {
+    content: "";
+    height: 1px;
+    display: block;
+    background-color: currentColor;
+  }
+}
+
+.splide__slide {
+  height: 150px;
+  width: 350px;
+  background: linear-gradient(-45deg, var(--white), var(--white-2));
+
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.13) 0px 2px 8px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+
+  @media screen and (min-width: 768px) {
+    transform: scale(0.8, 0.8);
+    &.is-active {
+      transform: scale(1, 1); /* sets the active slide to scaling of 1 (100%) */
+
+      & > .slide-icon {
+      }
+      &:left {
+        transform: scale(0.8, 0.8);
+      }
+    }
+  }
+}
+
+.slide--text {
+  position: absolute;
+  bottom: -21%;
+  padding: 5px 7px;
+  background-image: linear-gradient(110.3deg, var(--black), var(--black-hover));
+  color: white;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  font-family: var(--title-text);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+
+  font-size: 14px !important;
+  width: 80%;
+  text-align: center;
+}
+.splide {
+  max-width: 100%;
+}
+.splide__track {
+  height: 200px;
+}
+
+.slide-icon {
+  font-size: 50px !important;
+  color: var(--black);
+}

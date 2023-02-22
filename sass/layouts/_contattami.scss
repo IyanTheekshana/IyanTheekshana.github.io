@@ -1,0 +1,18 @@
+.contactme {
+  padding-bottom: 10rem;
+}
+.my-img {
+  border-radius: 2000px;
+}
+
+.social-link {
+  color: inherit;
+  font-size: 3rem;
+  padding: 1rem;
+
+  border-radius: 50%;
+
+  &:hover {
+    color: var(--hover);
+  }
+}
