@@ -265,13 +265,13 @@ a {
   margin-bottom: 30px; }
 
 .contactme {
-  padding-bottom: 8rem; }
+  padding-bottom: 4rem; }
   @media only screen and (max-width: 56.25em) {
     .contactme {
-      padding-bottom: 6rem; } }
+      padding-bottom: 2rem; } }
   @media only screen and (max-width: 37.5em) {
     .contactme {
-      padding-bottom: 3rem; } }
+      padding-bottom: 0.8rem; } }
 
 .my-img {
   border-radius: 2000px; }

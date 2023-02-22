@@ -1,11 +1,11 @@
 .contactme {
-  padding-bottom: 8rem;
+  padding-bottom: 4rem;
 
   @include respond(tab-port) {
-    padding-bottom: 6rem;
+    padding-bottom: 2rem;
   }
   @include respond(phone) {
-    padding-bottom: 3rem;
+    padding-bottom: 0.8rem;
   }
 }
 .my-img {
