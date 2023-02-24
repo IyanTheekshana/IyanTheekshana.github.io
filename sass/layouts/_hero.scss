@@ -1,6 +1,6 @@
 .hero {
   background-color: var(--white);
-
+  padding-bottom: 4rem;
   height: 85vh;
   clip-path: polygon(100% 0, 100% 70%, 0 100%, 0 100%, 0 0);
   @include respond(tab-port) {
@@ -34,7 +34,7 @@
 }
 
 .sub-title {
-  margin-bottom: 60px;
+  margin-bottom: 6rem;
 }
 
 .hightlight {

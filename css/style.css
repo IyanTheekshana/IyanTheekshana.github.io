@@ -140,6 +140,7 @@ a {
 
 .hero {
   background-color: var(--white);
+  padding-bottom: 4rem;
   height: 85vh;
   clip-path: polygon(100% 0, 100% 70%, 0 100%, 0 100%, 0 0); }
   @media only screen and (max-width: 56.25em) {
@@ -170,7 +171,7 @@ a {
       padding-top: 6rem; } }
 
 .sub-title {
-  margin-bottom: 60px; }
+  margin-bottom: 6rem; }
 
 .hightlight {
   position: relative; }
@@ -185,8 +186,7 @@ a {
     z-index: -1; }
 
 .chi-sono {
-  padding-top: 5rem;
-  padding-bottom: 10rem;
+  padding-bottom: 3rem;
   position: relative; }
   .chi-sono p {
     font-size: 1.4rem; }
@@ -251,7 +251,7 @@ a {
   color: var(--black); }
 
 .portfolio {
-  padding-bottom: 8rem; }
+  padding-bottom: 2rem; }
   .portfolio-btn {
     border: 1px solid var(--black);
     color: inherit;
