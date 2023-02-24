@@ -1,6 +1,5 @@
-$("#hamburger").click(function () {
-  $("#bar").toggleClass("active");
-  $("#nav__links").toggleClass("display-menu");
+$(".hamburger").click(function () {
+  $(".hamburger").toggleClass("is-active");
 });
 
 //navbar active class on scrolling
