@@ -89,6 +89,10 @@ a {
 /****************/
 .blink {
   animation: crescendo 2s alternate infinite ease-in;
+  background-image: linear-gradient(213deg, #ecd791, #2fccd2, #6f2ba6, #c87a29);
+  background-repeat: repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 @keyframes crescendo {
