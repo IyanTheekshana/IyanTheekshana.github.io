@@ -281,7 +281,10 @@ a {
 
 .img-project {
   width: 100%;
-  margin-bottom: 30px; }
+  margin-bottom: 30px;
+  transition: all 0.2; }
+  .img-project:hover {
+    transform: scale(1.01); }
 
 .contactme {
   padding-bottom: 4rem; }

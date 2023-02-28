@@ -39,4 +39,8 @@
 .img-project {
   width: 100%;
   margin-bottom: 30px;
+  transition: all 0.2;
+  &:hover {
+    transform: scale(1.01);
+  }
 }
