@@ -47,7 +47,7 @@ html {
 :root {
   --text: "Inter", sans-serif;
   --title-text: "Syne", sans-serif;
-  --white: #f8f8f8;
+  --white: rgb(248, 248, 248);
   --white-2: #e1e1e1;
   --black: #161616;
   --black-hover: #2d2d2d;
@@ -143,10 +143,12 @@ a {
   font-family: var(--title-text); }
 
 .hero {
-  background-color: var(--white);
+  background-image: linear-gradient(to right, rgba(248, 248, 248, 0.88), rgba(248, 248, 248, 0.66)), url("../img/milan.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
   padding-bottom: 4rem;
-  height: 85vh;
-  clip-path: polygon(100% 0, 100% 70%, 0 100%, 0 100%, 0 0); }
+  clip-path: polygon(100% 0, 100% 85%, 0 100%, 0 100%, 0 0); }
   @media only screen and (max-width: 56.25em) {
     .hero {
       height: 65vh; } }
@@ -155,7 +157,7 @@ a {
       height: 70vh; } }
   @media screen and (min-width: 1600px) {
     .hero {
-      height: 75vh; } }
+      height: 100vh; } }
   @media (min-aspect-ratio: 8 / 5) and (max-width: 840px) {
     .hero {
       clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 100%, 0 0);
